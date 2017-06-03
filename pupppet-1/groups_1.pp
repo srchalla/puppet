@@ -1,0 +1,3 @@
+group { 'sysadmins':
+  ensure => present,
+}
