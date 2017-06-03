@@ -1,0 +1,30 @@
+###################################################
+#  
+# What's this?    : Facter Usage in Puppet
+#
+# Who Documented  : Srinath Challa
+#
+# When its update : 6/3/2017
+#
+###################################################
+
+---- Modern Facts (Current Usage) -----
+
+# Access from command Line 
+facter
+facter kernel
+facter os.family
+facter os.selinux
+facter os.selinux.config_mode
+
+#In Code
+facts['os']['family']
+
+--- Legacy Facts (Deprecated Facts) ----
+
+# Deprecated
+$osfamily or $::osfamily
+
+# Legacy Facts
+puppet facts
+puppet facts | grep osfamily

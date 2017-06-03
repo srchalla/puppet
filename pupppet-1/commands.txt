@@ -1,0 +1,1 @@
+puppet describe user | grep -A5 Autorequires
