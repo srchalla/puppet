@@ -1,0 +1,9 @@
+# Managed by Puppet
+Server <%= $ntp_local_server %> iburst prefer
+<% $ntp_regional_server.each |$s| { -%>
+Server <%= $s %>
+<% } -%>
+driftfile /var/lib/ntp/drift
+<% unless $monitor == true { -%>
+disable monitor
+<% } -%>
