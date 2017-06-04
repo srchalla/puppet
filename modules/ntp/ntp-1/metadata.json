@@ -1,0 +1,15 @@
+{
+  "name": "schalla-ntp",
+  "version": "0.1.0",
+  "author": "Srinath Challa",
+  "summary": "Basic NTP module",
+  "license": "Apache-2.0",
+  "source": "https://github.com/srchalla/puppet",
+  "project_page": "https://github.com/srchalla/puppet",
+  "issues_url": "https://github.com/srchalla/puppet/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
